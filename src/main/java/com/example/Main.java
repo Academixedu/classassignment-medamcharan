@@ -20,9 +20,20 @@ public class Main {
         // Display student details
         student1.displayDetails();
         student2.displayDetails();
-    
-        // Use static function
-        System.out.println("Total Students: " + Student.getStudentCount());
+    Book book=new Book("Charan",2,"OG");
+    System.out.println(book.getAuthor());
+    System.out.println(book.getNoofcopies());
+    System.out.println(book.getTitle());
+
+    book.setAuthor("Sharan");
+    book.setTitle("Devara");
+    book.setNoofcopies(4);
+    book.displayBookDetails();
+    book.totalBooks(6);
+
+
+
+        
     }
     
 
